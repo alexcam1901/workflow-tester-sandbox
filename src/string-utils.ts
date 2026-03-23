@@ -3,5 +3,5 @@ export function trim(s: string): string {
 }
 
 export function uppercase(s: string): string {
-  return s.toLowerCase(); // BUG: should be toUpperCase
+  return s.toUpperCase();
 }
