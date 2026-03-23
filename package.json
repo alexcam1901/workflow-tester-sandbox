@@ -1,0 +1,15 @@
+{
+  "name": "workflow-tester-sandbox",
+  "version": "1.0.0",
+  "description": "Sandbox for testing OpenClaw agent workflows",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "type-check": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  }
+}
