@@ -10,3 +10,7 @@ export function roundTo(value: number, decimals: number): number {
 export function modulo(a: number, b: number): number {
   return a % b;
 }
+
+export function absoluteValue(n: number): number {
+  return Math.abs(n);
+}

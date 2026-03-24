@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { clamp, modulo } from './math-utils';
+import { clamp, modulo, absoluteValue } from './math-utils';
 
 describe('math-utils', () => {
   it('clamp returns value when within range', () => {
@@ -20,5 +20,17 @@ describe('math-utils', () => {
 
   it('modulo returns 0 when evenly divisible', () => {
     expect(modulo(9, 3)).toBe(0);
+  });
+
+  it('absoluteValue returns positive number unchanged', () => {
+    expect(absoluteValue(5)).toBe(5);
+  });
+
+  it('absoluteValue returns absolute value of negative number', () => {
+    expect(absoluteValue(-7)).toBe(7);
+  });
+
+  it('absoluteValue returns 0 for 0', () => {
+    expect(absoluteValue(0)).toBe(0);
   });
 });
